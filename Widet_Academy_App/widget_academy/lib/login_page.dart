@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage>{
       body: Center(
         child: Column(
           children: [
-
+            Text('Login Page'),
           ],
         ),
       ),
