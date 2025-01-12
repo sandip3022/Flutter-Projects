@@ -41,21 +41,20 @@ class _WelcomePageState extends State<WelcomePage> {
       appBar: AppBar(
         title: const Text('Welcome'),
       ),
-      bottomNavigationBar: ElevatedButton(
+      floatingActionButton: ElevatedButton(
         onPressed: () {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => const LoginPage()),
           );
         },
-        style: ElevatedButton.styleFrom(
-          padding: const EdgeInsets.symmetric(
-              vertical: 10), // Adjust padding for better UI
-        ),
+        // style: ElevatedButton.styleFrom(
+        //   padding: const EdgeInsets.symmetric(
+        //       vertical: 10), // Adjust padding for better UI
+        // ),
         child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Next'),
             Icon(Icons.arrow_forward),
           ],
         ),
